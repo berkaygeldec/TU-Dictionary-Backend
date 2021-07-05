@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Reset Password";
+}
+<div class="col-md-3">
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <span>BUGÜN</span>
+        </div>
+        <div class="post-list">
+            <div class="box">
+                <a href="#">Sed non varius magna, et porttitor sapien.</a>
+            </div>
+            <div class="box">
+                <a href="#">Etiam non erat vel enim mollis pharetra.</a>
+            </div>
+            <div class="box">
+                <a href="#">Quisque blandit diam vel lorem mattis, quis ullamcorper ipsum rhoncus.</a>
+            </div>
+            <div class="box">
+                <a href="#">Aenean in turpis risus. Donec eget venenatis arcu, sit amet ornare nisl.</a>
+            </div>
+            <div class="box">
+                <a href="#">Duis lobortis mattis enim sit amet condimentum.</a>
+            </div>
+            <div class="box">
+                <a href="#">Aliquam interdum felis sit amet mauris fermentum, ac facilisis lacus egestas.</a>
+            </div>
+            <div class="box">
+                <a href="#">Interdum et malesuada fames ac ante ipsum primis in faucibus.</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-9">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="white-box">
+                <div class="white-box-title register">
+                    <span>KAYIT OL</span>
+                </div>
+                <div class="white-box-content">
+                    <form name="test" autocomplete="off">
+                        <label for="username">kullanıcı adınız</label>
+                        <input type="text" id="username" value="" placeholder="" />
+                        <label for="email">e-mail adresi</label>
+                        <input type="text" id="email" value="" placeholder="" />
+                        <label for="about">hakkınızda</label>
+                        <textarea id="about"></textarea>
+                        <label for="pwd">şifre</label>
+                        <input type="password" id="pwd" value="" placeholder="" />
+                        <label for="pwd2">şifre(tekrar)</label>
+                        <input type="password" id="pwd2" value="" placeholder="" />
+                        <input type="submit" value="oluştur" />
+                    </form>
+                    <div class="login-problem">
+                        <span>eğer hesabın varsa;</span>
+                        <a asp-area="" asp-controller="Home" asp-action="Login">buraya tıklayarak giriş yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="advertise-250">
+                <img src="~/img/250x250.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-advertise">
+            <img src="~/img/footer-advertise.png" alt="" />
+        </div>
+        <nav class="footer">
+            <ul>
+                <li><a href="#">iletişim</a></li>
+                <li><a href="#">kullanım koşulları</a></li>
+                <li><a href="#">istatistikler</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>

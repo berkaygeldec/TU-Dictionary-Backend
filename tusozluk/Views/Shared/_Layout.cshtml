@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - tusozluk</title>
+
+    <script src="~/js/jquery.js"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <script src="~/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex">
+                        <figure class="logo">
+                            <a asp-area="" asp-controller="Home" asp-action="Index"></a>
+                        </figure>
+                        <div class="search-form">
+                            <input type="text" value="" placeholder="ara / yeni başlık aç" />
+                            <input type="submit" value="" />
+                        </div>
+                        <div class="dark-mode">
+                            <a href="#"></a>
+                        </div>
+                        <div class="for-guests">
+                            <ul>
+                                <li class="login"><a asp-area="" asp-controller="Home" asp-action="Login">giriş yap</a></li>
+                                <li class="register"><a asp-area="" asp-controller="Home" asp-action="Register">kayıt ol</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span>Konular :</span>
+                        <a href="#">#siyaset</a>
+                        <a href="#">#haber</a>
+                        <a href="#">#müzik</a>
+                        <a href="#">#sinema</a>
+                        <a href="#">#sağlık</a>
+                        <a href="#">#spor</a>
+                        <a href="#">#teknoloji</a>
+                        <a href="#">#edebiyat</a>
+                        <a href="#">#sanat</a>
+                        <a href="#">#ilişkiler</a>
+                        <a href="#">#goygoy</a>
+                        <a href="#">#tarihtebugün</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
